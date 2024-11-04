@@ -8,7 +8,60 @@ body{
     font-family: "Montserrat", sans-serif;
 }
 
+.choosing-area{
+  display: flex;
+  width: 90%;
+  margin: auto;
+  /* background-color: brown; */
+}
+.choosing-area .like-area{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: blue; */
+  width: 30%;
+}
+.choosing-area .like-area .like-mark-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background-color: #070a37;
+  color: rgb(183, 190, 1);
+  opacity: 0.3;
+}
+.choosing-area .like-area .like-mark-container i{
+  font-size: 6rem;
+}
+.choosing-area .dislike-area{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: blue; */
+  width: 30%;
+}
+.choosing-area .dislike-area .dislike-mark-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background-color: #070a37;
+  color: rgb(183, 190, 1);
+  opacity: 0.3;
+}
+.choosing-area .dislike-area .dislike-mark-container i{
+  font-size: 6rem;
+  opacity: 0.5;
+}
+
 .card-swipper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
     margin: 50px auto 100px auto ;
     position: relative;
     width: 200px;
@@ -107,8 +160,7 @@ body{
 }
 
 .liked-games{
-  background-color: rgb(183, 190, 1);
-  color: rgb(7, 7, 40);
+  color: rgb(183, 190, 1);
 }
 /* endroit réservé pour les cartes choisis */
 
@@ -119,7 +171,7 @@ body{
     margin: auto;
     gap: 1vw;
     flex-wrap: wrap;
-    border: 1px dashed rgb(183, 190, 1);
+    border: 1px dashed rgb(7, 7, 40);
     border-radius: 5px
 }
 
