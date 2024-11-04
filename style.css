@@ -11,7 +11,7 @@ body{
 .card-swipper{
     display: flex;
     margin: auto;
-
+    margin-bottom: 50px;
 }
 
 .card-swipper .game-card{

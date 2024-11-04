@@ -1,0 +1,1 @@
+const carteJeux =  document.getElementById("carte-jeux");
