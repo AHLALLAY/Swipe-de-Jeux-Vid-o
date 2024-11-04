@@ -1,0 +1,100 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 3%;
+    background-color: rgb(7, 7, 40);
+    width: 100vw;
+    height: 100vh;
+    font-family: "Montserrat", sans-serif;
+}
+
+.card-swipper{
+    display: flex;
+    margin: auto;
+
+}
+
+.card-swipper .game-card{
+    display: flex;
+    flex-direction: column;
+    width: 265px;
+    height: 450px;
+    background-color: rgb(227, 234, 14) ;
+    color:rgba(6, 6, 26, 0.904);
+    border-radius: 8px;
+    padding: 0.5%;
+    margin: auto;
+    box-shadow: rgba(249, 232, 2, 0.481) 0px 5px 15px;
+}
+
+.card-swipper .game-card .game-img{
+    width: 100%;
+    height: 70%;
+    margin: 0;
+}
+
+.card-swipper .game-card .game-img img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card-swipper .game-card h3{
+    /* height: 10%; */
+    margin: 10px 0 2px 0;
+    text-align: center;
+}
+
+.card-swipper .game-card p{
+    height: 10%;
+    margin: 0;
+    text-align: center;
+}
+
+.card-store{
+    display: flex;
+    width: 95vw;
+    margin: auto;
+    height: 100vh;
+    gap: 1vw;
+    flex-wrap: wrap;
+}
+
+.card-store .game-card{
+    display: flex;
+    flex-direction: column;
+    width: 265px;
+    height: 450px;
+    background-color: rgb(227, 234, 14) ;
+    color:rgba(6, 6, 26, 0.904);
+    border-radius: 8px;
+    padding: 0.5%;
+    margin: auto;
+    box-shadow: rgba(249, 232, 2, 0.481) 0px 5px 15px;
+}
+
+.card-store .game-card .game-img{
+    width: 100%;
+    height: 70%;
+    margin: 0;
+}
+
+.card-store .game-card .game-img img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card-store .game-card h3{
+    /* height: 10%; */
+    margin: 10px 0 2px 0;
+    text-align: center;
+}
+
+.card-store .game-card p{
+    height: 10%;
+    margin: 0;
+    text-align: center;
+}
