@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +12,6 @@
     <link rel="stylesheet" href="style.css">
     <title>Swipe-de-Jeux-Video</title>
 </head>
-
 <body>
     <div class="choosing-area">
         <div class="like-area">
@@ -22,62 +20,62 @@
             </div>
         </div>
         <div class="card-swipper">
-            <div class="game-card" draggable="true" ondragstart="event.dataTransfer.setData('text/plain', 'div à glisser');" id="carte-jeux">
+            <div class="game-card" draggable="true" ondragstart="dragStart(event)" id="carte-jeux-1">
                 <div class="game-img"><img src="images/call of duty.jpg" alt="call of duty"></div>
                 <h3>Call Of Duty</h3>
                 <p>Lorem ipsum dolor sit amet consectetur.</p>
             </div>
-            <div class="game-card" draggable=" true" id="carte-jeux">
+            <div class="game-card" draggable="true" ondragstart="dragStart(event)" id="carte-jeux-2">
                 <div class=" game-img"><img src="images/Counter-Strike.jpg" alt="Counter Strike"></div>
                 <h3>Counter Strike</h3>
                 <p>Lorem ipsum dolor sit amet consectetur.</p>
             </div>
-            <div class="game-card" draggable="true" id="carte-jeux">
+            <div class="game-card" draggable="true" ondragstart="dragStart(event)" id="carte-jeux-3">
                 <div class="game-img"><img src="images/fifa.jpg" alt="FIFA"></div>
                 <h3>FIFA</h3>
                 <p>Lorem ipsum dolor sit amet consectetur.</p>
             </div>
-            <div class="game-card" draggable="true" id="carte-jeux">
+            <div class="game-card" draggable="true" ondragstart="dragStart(event)" id="carte-jeux-4">
                 <div class="game-img"><img src="images/fortnite.jpg" alt="Fortnite"></div>
                 <h3>Fortnite</h3>
                 <p>Lorem ipsum dolor sit amet consectetur.</p>
             </div>
-            <div class="game-card" draggable="true" id="carte-jeux">
+            <div class="game-card" draggable="true" ondragstart="dragStart(event)" id="carte-jeux-5">
                 <div class="game-img"><img src="images/GTA.png" alt="GTA"></div>
                 <h3>GTA</h3>
                 <p>Lorem ipsum dolor sit amet consectetur.</p>
             </div>
-            <div class="game-card" draggable="true" id="carte-jeux">
+            <div class="game-card" draggable="true" ondragstart="dragStart(event)" id="carte-jeux-6">
                 <div class="game-img"><img src="images/League of legends.jpg" alt="League of Legends"></div>
                 <h3>League of Legends</h3>
                 <p>Lorem ipsum dolor sit amet consectetur.</p>
             </div>
-            <div class="game-card" draggable="true" id="carte-jeux">
+            <div class="game-card" draggable="true" ondragstart="dragStart(event)" id="carte-jeux-7">
                 <div class="game-img"><img src="images/minecraft.jpg" alt="Minecraft"></div>
                 <h3>Minecraft</h3>
                 <p>Lorem ipsum dolor sit amet consectetur.</p>
             </div>
-            <div class="game-card" draggable="true" id="carte-jeux">
+            <div class="game-card" draggable="true" ondragstart="dragStart(event)" id="carte-jeux-8">
                 <div class="game-img"><img src="images/nfs.jpg" alt="NFS"></div>
                 <h3>NFS</h3>
                 <p>Lorem ipsum dolor sit amet consectetur.</p>
             </div>
-            <div class="game-card" draggable="true" id="carte-jeux">
+            <div class="game-card" draggable="true" ondragstart="dragStart(event)" id="carte-jeux-9">
                 <div class="game-img"><img src="images/PUBG.jpg" alt="PUBG"></div>
                 <h3>PUBG</h3>
                 <p>Lorem ipsum dolor sit amet consectetur.</p>
             </div>
-            <div class="game-card" draggable="true" id="carte-jeux">
+            <div class="game-card" draggable="true" ondragstart="dragStart(event)" id="carte-jeux-10">
                 <div class="game-img"><img src="images/Sonic.jpg" alt="Sonic"></div>
                 <h3>SONIC</h3>
                 <p>Lorem ipsum dolor sit amet consectetur.</p>
             </div>
-            <div class="game-card" draggable="true" id="carte-jeux">
+            <div class="game-card" draggable="true" ondragstart="dragStart(event)" id="carte-jeux-11">
                 <div class="game-img"><img src="images/riblox.jpg" alt="Roblox"></div>
                 <h3>ROBLOX</h3>
                 <p>Lorem ipsum dolor sit amet consectetur.</p>
             </div>
-            <div class="game-card" draggable="true" id="carte-jeux">
+            <div class="game-card" draggable="true" ondragstart="dragStart(event)" id="carte-jeux-12">
                 <div class="game-img"><img src="images/wicher.jpg" alt="witcher"></div>
                 <h3>WITCHER</h3>
                 <p>Lorem ipsum dolor sit amet consectetur.</p>
@@ -89,13 +87,11 @@
             </div>
         </div>
     </div>
-    
     <div class="liked-games">
         <h2>les Jeux vidéos que vous avez aimé récement :</h2>
     </div>
-    <div class="card-store">
+    <div class="card-store" ondrop="dropToLikedArea(event)" ondragover="allowDrop(event)">
     </div>
     <script src="script.js"></script>
 </body>
-
 </html>

@@ -7,30 +7,27 @@ body{
     height: 100vh;
     font-family: "Montserrat", sans-serif;
 }
-
 .choosing-area{
   display: flex;
   width: 90%;
   margin: auto;
-  /* background-color: brown; */
 }
 .choosing-area .like-area{
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: blue; */
   width: 30%;
 }
 .choosing-area .like-area .like-mark-container{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 150px;
-  width: 150px;
+  height: 20%;
+  width: 30%;
   border-radius: 50%;
   background-color: #070a37;
-  color: rgb(183, 190, 1);
-  opacity: 0.3;
+  color: rgb(229, 245, 2);
+  opacity: 0.5;
 }
 .choosing-area .like-area .like-mark-container i{
   font-size: 6rem;
@@ -39,36 +36,33 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: blue; */
   width: 30%;
 }
 .choosing-area .dislike-area .dislike-mark-container{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 150px;
-  width: 150px;
+  height: 20%;
+  width: 30%;
   border-radius: 50%;
   background-color: #070a37;
-  color: rgb(183, 190, 1);
-  opacity: 0.3;
+  color: rgb(229, 245, 2);
+  opacity: 0.5;
 }
 .choosing-area .dislike-area .dislike-mark-container i{
   font-size: 6rem;
   opacity: 0.5;
 }
-
 .card-swipper{
   display: flex;
   align-items: center;
   justify-content: center;
-    margin: 50px auto 100px auto ;
-    position: relative;
-    width: 200px;
-    height: 550px;
-    perspective: 1000px;;
+  margin: 50px auto 100px auto ;
+  position: relative;
+  width: 200px;
+  height: 550px;
+  perspective: 1000px;;
 }
-
 .card-swipper .game-card{
   width: 300px;
   height: 500px;
@@ -81,31 +75,26 @@ body{
   overflow: hidden;
   transition: transform 0.5s ease, top 0.3s ease;
 }
-
 .card-swipper .game-card .game-img{
     width: 100%;
     height: 70%;
     margin: 0;
 }
-
 .card-swipper .game-card .game-img img{
     width: 100%;
     height: 100%;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
-
 .card-swipper .game-card h3{
     margin: 10px 0 2px 0;
     text-align: center;
 }
-
 .card-swipper .game-card p{
     height: 10%;
     margin: 0;
     text-align: center;
 }
-
 .game-card:nth-child(1) {
   top: 0;
   transform: translateZ(32px) rotate(-1deg);
@@ -130,7 +119,6 @@ body{
   top: 25px;
   transform: translateZ(22px) rotate(-6deg);
 }
-
 .game-card:nth-child(7) {
   top: 30px;
   transform: translateZ(20px) rotate(-7deg);
@@ -139,12 +127,10 @@ body{
   top: 35px;
   transform: translateZ(18px) rotate(-8deg);
 }
-
 .game-card:nth-child(9) {
   top: 40px;
   transform: translateZ(16px) rotate(-9deg);
 }
-
 .game-card:nth-child(10) {
   top: 45px;
   transform: translateZ(14px) rotate(-10deg);
@@ -153,63 +139,110 @@ body{
   top: 50px;
   transform: translateZ(12px) rotate(-11deg);
 }
-
 .game-card:nth-child(12) {
   top: 55px;
   transform: translateZ(10px) rotate(-12deg);
 }
-
 .liked-games{
   color: rgb(183, 190, 1);
 }
 /* endroit réservé pour les cartes choisis */
 
-.card-store{
-    display: flex;
-    padding: 1%;
-    width: 90vw;
-    margin: auto;
-    gap: 1vw;
-    flex-wrap: wrap;
-    border: 1px dashed rgb(7, 7, 40);
-    border-radius: 5px
+.card-store {
+  display: grid;
+  padding: 1%;
+  width: 90vw;
+  margin: auto;
+  gap: 1vw;
+  border: 1px dashed rgb(7, 7, 40);
+  border-radius: 5px;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Gère les colonnes */
 }
 
-.card-store .liked-game-card{
-    display: flex;
-    flex-direction: column;
-    width: 23%;
-    min-width: 280px;
-    height: 450px;
-    background-color: rgb(183, 190, 1) ;
-    color:rgba(6, 6, 26, 0.904);
-    border-radius: 8px;
-    padding: 0.5%;
-    margin: auto;
-    box-shadow: rgba(249, 232, 2, 0.481) 0px 5px 15px;
+.card-store .liked-game-card {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(183, 190, 1);
+  color: rgba(6, 6, 26, 0.904);
+  border-radius: 8px;
+  padding: 0.5%;
+  box-shadow: rgba(249, 232, 2, 0.481) 0px 5px 15px;
 }
 
-.card-store .liked-game-card .game-img{
+.card-store .liked-game-card .game-img {
+  width: 100%;
+  height: 70%;
+  margin: 0;
+}
+
+.card-store .liked-game-card .game-img img {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.card-store .liked-game-card h3 {
+  margin: 10px 0 2px 0;
+  text-align: center;
+}
+
+.card-store .liked-game-card p {
+  height: 10%;
+  margin: 0;
+  text-align: center;
+}
+
+/* tailles mobile */
+
+@media (max-width: 415px) {
+  .choosing-area{
     width: 100%;
-    height: 70%;
-    margin: 0;
+  }
+  .choosing-area .like-area{
+    width: 15%;
+  }
+  .choosing-area .dislike-area{
+    width: 15%;
+  }
+  .choosing-area .like-area .like-mark-container{
+    height: 50px;
+    width: 50px;
+    /* background-color: #070a37; */
+    background-color: aqua;
+  }
+  .choosing-area .like-area .like-mark-container i{
+    font-size: 2rem;
+  }
+  .choosing-area .dislike-area .dislike-mark-container{
+    height: 50px;
+    width: 50px;
+    /* background-color: #070a37; */
+    background-color: aqua;
+  }
+  .choosing-area .dislike-area .dislike-mark-container i{
+    font-size: 2rem;
+    opacity: 0.5;
+  }
+  .card-swipper{
+    width: 180px;
+    height: 300px;
+  }
+  .card-swipper .game-card{
+    width: 180px;
+    height: 300px;
+  }
+  .card-swipper .game-card p{
+    font-size: 0.8rem;
 }
-
-.card-store .liked-game-card .game-img img{
-    width: 100%;
-    height: 100%;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+.liked-games{
+  text-align: center;
 }
-
-.card-store .liked-game-card h3{
-    margin: 10px 0 2px 0;
-    text-align: center;
+ /* endroit réservé pour les cartes choisis */
+.card-store .liked-game-card h3 {
+  font-size: 2rem;
 }
-
-.card-store .liked-game-card p{
-    height: 10%;
-    margin: 0;
-    text-align: center;
-} 
-
+.card-store .liked-game-card p {
+  font-size: 1.5rem;
+}
+}
